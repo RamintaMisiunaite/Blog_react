@@ -7,10 +7,10 @@ function Subsections() {
     <div class='subsections-container'>
       <ul class='subsections-list-ul'>
         <li class='subsection-li'>
-            <Link to='/' className ='sub-links'>Home</Link>
+            <Link to='/knygos' className ='sub-links'>Knygos</Link>
         </li>
         <li class='subsection-li'>
-            <Link to='/' className ='sub-links'>bbb</Link>
+            <Link to='/diet' className ='sub-links'>Fuck Diet</Link>
         </li>
         <li class='subsection-li'>
             <Link to='/' className ='sub-links'>ccc</Link>
