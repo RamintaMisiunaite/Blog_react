@@ -1,22 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 .subsections-container{
-    text-align: center;
+    /* text-align: center; */
+    font-family: "SUSE";
 }
 .subsections-list-ul
 {
-    display: inline-block;
+    /* display: inline-block;
     list-style: none;
     justify-content: center;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; */
+
+      /* Use flex boxes to align li items */
+      display: flex;
+      justify-content: space-around;
+      /* Remove default padding from major browsers */
+      margin: 0px auto;
+      padding: 0;
+      /* Hide the default decorations for li items */
+      list-style: none;
 }
 
 .subsection-li
 {
+    display: inline-block;
     padding: 20px;
     background-color: white;
     border: 1px solid black;
-    margin: 10px;
+    margin: 40px;
     border-radius: 20px;
     width: 200px;
 }
@@ -26,11 +39,11 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
-    text-indent: 50px;
   }
   
-.sub-links:hover {
-    /* border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out; */
+  .subsection-li:hover {
+    /* border-bottom: 4px solid #fff; */
+    /* transition: all 0.2s ease-out;  */
     background-color: aqua;
+    font-style: italic;
   }

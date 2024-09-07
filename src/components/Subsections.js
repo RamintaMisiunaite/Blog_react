@@ -10,13 +10,13 @@ function Subsections() {
             <Link to='/knygos' className ='sub-links'>Knygos</Link>
         </li>
         <li class='subsection-li'>
-            <Link to='/diet' className ='sub-links'>Fuck Diet</Link>
+            <Link to='/diet' className ='sub-links'>Fuck Diet Culture</Link>
         </li>
         <li class='subsection-li'>
-            <Link to='/' className ='sub-links'>ccc</Link>
+            <Link to='/vasara' className ='sub-links'>Vasaros special</Link>
         </li>
         <li class='subsection-li'>
-            <Link to='/' className ='sub-links'>ddd</Link>
+            <Link to='/' className ='sub-links'>Istorijų žurnalas</Link>
         </li>
         </ul>
     </div>

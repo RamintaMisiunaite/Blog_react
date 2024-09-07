@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root{
+    font-family: "SUSE";
+
+}
+.blogs-container, h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.blog-container{
+  /* width:  calc(100% / 4);  */
+  height: 200px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid red;
+  text-align: Left;
+  margin: 2%;
+  padding: 20px; 
+  overflow: hidden;
+  white-space: normal;
+  inline-size: min-content;
+  overflow-wrap: break-word;
+  /* text-overflow: ellipsis;  */
+  width: 40rem;
+
+}
+
+.blog-title{
+    font-size: x-large;
+}
+.blog-date{
+    
+}
+.blog-body{
+    margin-top: 15px;
+}

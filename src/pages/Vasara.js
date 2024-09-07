@@ -1,12 +1,12 @@
 import React from 'react';
 import BloglistView from '../components/bloglist';
 
-function Diet() {
+function Vasara() {
   return (
     <div>
-      <BloglistView blog_theme={'Fuck Diet Culture'}/>
+      <BloglistView blog_theme={'Vasara'}/>
     </div>
   )
 }
 
-export default Diet
+export default Vasara

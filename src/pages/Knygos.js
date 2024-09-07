@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import BloglistView from '../components/bloglist';
 
 function Knygos() {
   return (
     <div>
-      <h1>Knygos</h1>
+      <BloglistView blog_theme={'Knygos'}/>
     </div>
   )
 }

@@ -1,7 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;  */
+}
+
 .full-background
 {
-    background-image: url(./images/plant-back.jpg);
+    background-image: url(./images/plant_background_1.png);
     background-repeat: no-repeat;  
     background-size: cover;  
     height: 100vh;
@@ -12,9 +20,14 @@
 {
     background-color: white;
     color: black;
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 30px;
     text-align: center;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    font-family: "SUSE";
+    font-variation-settings: 'opsz' 50;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: italic;
 }

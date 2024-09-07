@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "SUSE";
   font-size: 1.2rem;
   position: sticky;
   top: 0;
@@ -20,13 +24,14 @@
 
 .nav-menu{
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 80px;
   list-style: none;
   text-align: center;
   width: 60vw;
   justify-content: end;
-  margin-right: 2rem;
+  /* margin-right: -10 rem; */
+  margin-left: 300px;
 }
 
 .nav-links {

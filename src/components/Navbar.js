@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
-import CreateBlog from '../create';
+import CreateBlog from './create';
 
 function Navbar() {
 
@@ -18,9 +18,9 @@ function Navbar() {
                 <li>
                     <Link to="/create_blogs" className="nav-links">Create blog</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/bloglist_view" className="nav-links">Blog list</Link>
-                </li>
+                </li> */}
                 </ul>
             </div>
     </nav>

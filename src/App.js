@@ -2,15 +2,15 @@ import './App.css';
 import Navbar from './components/Navbar.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Subsections from './components/Subsections.js'
-// import CreateBlog from './create.js';
-import CreateBlogPage from './components/CreateBlogPage.js';
-import BloglistView from './bloglist.js';
-import Layout from './Layout.js';
-import Home from './Home.js';
-import NoPage from './NoPage.js';
+import CreateBlogPage from './pages/CreateBlogPage.js';
+import BloglistView from './components/bloglist.js';
+import Layout from './components/Layout.js';
+import Home from './pages/Home.js';
+import NoPage from './pages/NoPage.js';
 import ReactDOM from "react-dom/client";
 import Knygos from './pages/Knygos.js';
 import Diet from './pages/Diet.js';
+import Vasara from './pages/Vasara.js';
 
 export default function App() {
   return (
@@ -19,11 +19,12 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="create_blogs" element={<CreateBlogPage />} />
-          <Route path="bloglist_view" element={<BloglistView />} />
+          {/* <Route path="bloglist_view" element={<BloglistView  />} /> */}
           <Route path="*" element={<NoPage />} />
 
           <Route path="knygos" element={<Knygos />} />
           <Route path="diet" element={<Diet />} />
+          <Route path="vasara" element={<Vasara />} />
         </Route>
       </Routes>
     </Router>

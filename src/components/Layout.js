@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import './Layout.css'
-import Navbar from "./components/Navbar";
+import Navbar from "./Navbar";
 
 const Layout = () => {
   return (
