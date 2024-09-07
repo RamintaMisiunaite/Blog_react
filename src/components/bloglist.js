@@ -6,7 +6,14 @@ import './bloglist.css'
 
 const db = fb.firestore()
 const Blogs = db.collection('blogs');
-
+const textStyle = {
+  maxWidth: '100%',
+  display: '-webkit-box',
+  WebkitBoxOrient: 'vertical',
+  WebkitLineClamp: 3,
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+};
 
 
 function BloglistView({blog_theme}) {
@@ -29,6 +36,19 @@ function BloglistView({blog_theme}) {
     return unsubscribe;
   }, []);
 
+// This function returns the correct style to the above div.
+ function calculateTextStyle() {
+    return truncate ? textStyle : null;
+  }
+
+// I used React Hooks to create a variable in state to manage if the text should be truncated or not.
+  const [truncate, setToggleTruncate] = React.useState(true);
+
+// This function toggles the state variable 'truncate', thereby expanding and truncating the text every time the user clicks the div.
+  function toggleTruncate() {
+    setToggleTruncate(!truncate);
+  }
+
 
   return (
     <>
@@ -38,7 +58,7 @@ function BloglistView({blog_theme}) {
           <div key={blog.id} className='blog-container'>
               <h3 className='blog-title'>{blog.Title}</h3>
               <p className='blog-date'>{blog.published_on.seconds * 1000}</p>
-              <p className='blog-body'>{blog.Body} </p>
+              <p className='blog-body' style={calculateTextStyle()} onClick={toggleTruncate}>{blog.Body} </p>
               {/* <p>Date: {(blog.published_on.seconds * 1000).toISOString()}</p> */}
           </div>
           ))}
