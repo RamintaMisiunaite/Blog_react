@@ -18,6 +18,9 @@ function Subsections() {
         <li class='subsection-li'>
             <Link to='/' className ='sub-links'>Istorijų žurnalas</Link>
         </li>
+        <li class='subsection-li'>
+            <Link to='/post' className ='sub-links'>TEMP post</Link>
+        </li>
         </ul>
     </div>
   )

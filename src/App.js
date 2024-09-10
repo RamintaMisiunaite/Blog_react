@@ -11,6 +11,10 @@ import ReactDOM from "react-dom/client";
 import Knygos from './pages/Knygos.js';
 import Diet from './pages/Diet.js';
 import Vasara from './pages/Vasara.js';
+import Post from './pages/Post.js';
+import Post_page from './pages/Post_page.js';
+
+
 
 export default function App() {
   return (
@@ -25,6 +29,7 @@ export default function App() {
           <Route path="knygos" element={<Knygos />} />
           <Route path="diet" element={<Diet />} />
           <Route path="vasara" element={<Vasara />} />
+          <Route path="post/:id" element={<Post_page />} />
         </Route>
       </Routes>
     </Router>
