@@ -1,5 +1,6 @@
 import React from 'react';
 import { BlogButton } from '../components/RedirectToBlogButton'; 
+import '../pages_css/SinglePost.css'
 
 function SinglePost({blog_var}) {
     const textStyle = {
@@ -24,11 +25,17 @@ function calculateTextStyle() {
     setToggleTruncate(!truncate);
   }
 
+  if(!blog_var.published_date){
+    blog_var.published_date = 'empty'
+  }
+
   return (
-    <div className='xxx'>
+    <div className='single-post-container'>
       <h3 className='blog-title'>{blog_var.Title}</h3>
-              <p className='blog-date'>{blog_var.published_on.seconds * 1000}</p>
+        <p className='blog-date'>{blog_var.published_date}</p> 
               <p className='blog-body' style={calculateTextStyle()} >{blog_var.Body} </p>
+              
+
               <BlogButton blog_id={blog_var.id}></BlogButton>
     </div>
   )

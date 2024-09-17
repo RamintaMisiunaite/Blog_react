@@ -11,7 +11,7 @@ export const BlogButton = ({blog_id}) => {
     // use Link styled as a button
     return (
 
-        <Link to={{ pathname : `/post/${blog_id}` }} state = {blog_id}>
+        <Link to={{ pathname : `/post/${blog_id}` }} state = {blog_id} className="read-more-button">
             Read more
         </Link>
     )

@@ -1,8 +1,25 @@
-.container{
-    width: 50px;
-    background-color: aqua;
+.post-container{
+    /* background-color: aqua; */
+    display: block;
+    
 }
 
-.title{
-    font-size: large;
+.post-title{
+    /* font-size: large; */
+    background-color: antiquewhite;
+}
+.post-body{
+    /* font-size: large; */
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    margin-top: 10vh;
+    max-width: 70vw;
+    padding: 25px 50px 10px 50px;
+    margin-left: 10vw ;
+    font-size: 1.2rem;
+    /* background-color: rgb(233,237,201, 0.9); */
+    background-color: #f1f3dc;
+    border-radius: 2%;
+
 }

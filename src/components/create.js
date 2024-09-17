@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import fb from './firebase.js';
-import './create.css'
+import './create.css';
+import moment from 'moment';
 
 const db = fb.firestore()
 const Blogs = db.collection('blogs');
@@ -19,7 +20,8 @@ const CreateBlog= () => {
             Body: body,
             Theme:theme,
             //publish: false,
-            published_on: fb.firestore.Timestamp.fromDate(new Date())
+            published_on: fb.firestore.Timestamp.fromDate(new Date()),
+            published_date: moment().format('MMMM Do YYYY, h:mm:ss a')
         })
         .then((docRef) => {
             alert("Data Successfully Submitted");

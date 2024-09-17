@@ -6,12 +6,6 @@
 }
 .subsections-list-ul
 {
-    /* display: inline-block;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    display: flex; */
 
       /* Use flex boxes to align li items */
       display: flex;
@@ -36,14 +30,16 @@
 .sub-links {
     color: black;
     display: flex;
+    justify-content: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
     height: 100%;
+    padding: 0.5 em 1 em;
+
   }
   
   .subsection-li:hover {
-    /* border-bottom: 4px solid #fff; */
-    /* transition: all 0.2s ease-out;  */
-    background-color: aqua;
-    font-style: italic;
+    background-color: #e9edc9;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px lightgray;
+    transition: ease background-color 250ms;
   }

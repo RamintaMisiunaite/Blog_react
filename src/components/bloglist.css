@@ -24,12 +24,11 @@ h1{
 }
 
 .blog-container{
-  /* width:  calc(100% / 4);  */
   height: 200px;
   background-color: white;
   display: inline-block;
   vertical-align: top;
-  border: 1px solid red;
+  border: 1px solid #D4A373;
   text-align: Left;
   margin: 2%;
   padding: 20px; 
@@ -37,9 +36,8 @@ h1{
   white-space: normal;
   inline-size: min-content;
   overflow-wrap: break-word;
-  /* text-overflow: ellipsis;  */
   width: 40rem;
-  /* overflow-y: scroll; */
+  border-radius: 20px;
 
 }
 

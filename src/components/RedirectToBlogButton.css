@@ -1,6 +1,16 @@
-.button{
-    background-color: red;
-    color: whitesmoke;
-    width: 200px;
-    height: 40px;
+.read-more-button{
+    background: none;
+    border: #D4A373 solid 2px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    float: left;
+    margin-top: 30px;
+}
+
+.read-more-button:hover{
+    background: #D4A373; 
+    color: white;
+    transition: 0.2s;
 }

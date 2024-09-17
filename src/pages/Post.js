@@ -24,12 +24,18 @@ function Post({blog_id}) {
 
   fetchSinglePost();
 
+  
+
   return (
    
     
-    <div>
-        <h1>{blog_post.Title}</h1>
-        <p>{blog_post.Body}</p>
+    <div className='post-container'>
+        <h1 className='post-title'>{blog_post.Title}</h1>
+        <p className='post-body'>
+          {/* {blog_post.published_date} */}
+          {"\n"}
+          {blog_post.Body}
+        </p>
     </div>)
   
 }

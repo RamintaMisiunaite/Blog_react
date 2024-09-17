@@ -14,13 +14,14 @@
     background-size: cover;  
     height: 100vh;
     overflow:auto;
+    margin-top: -78px;
 }
 
 .title-container
 {
     background-color: white;
     color: black;
-    margin-top: 10%;
+    margin-top: 250px;
     padding: 30px;
     text-align: center;
     border-top: 5px solid black;

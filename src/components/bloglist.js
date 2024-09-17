@@ -12,23 +12,22 @@ const Blogs = db.collection('blogs');
 
 function BloglistView({blog_theme}) {
   const [bloglist, Setblogs] = useState([]);
-  let queryRef = Blogs.where('Theme', '==', blog_theme);//.orderBy('published_on', Query.Direction.ASCENDING);
+  let queryRef = Blogs.where('Theme', '==', blog_theme);//.orderBy("published_date", "asc");
+
 
   useEffect(() => {
     // Subscribe to query with onSnapshot
     const unsubscribe = queryRef.limit(100).onSnapshot(querySnapshot => {
-      // Get all documents from collection - with IDs
       const data = querySnapshot.docs.map(doc => ({
         ...doc.data(),
         id: doc.id,
       }));
-      // Update state
       Setblogs(data);
     });
 
-    // Detach listener
     return unsubscribe;
   }, []);
+
 
   return (
     <>
@@ -37,7 +36,6 @@ function BloglistView({blog_theme}) {
           {bloglist.map(blog=> ( 
           <div key={blog.id} className='blog-container'>
             <SinglePost blog_var={blog}/>
-            {/* <Post blog_id={blog.id}/> */}
           </div>
 
 
